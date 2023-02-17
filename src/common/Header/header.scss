@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  padding: 12px calc((100% - 1500px) / 2);
+  position: fixed;
+  z-index: 3;
+  background: #ffffff;
+  .header_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      height: 29px;
+      img {
+        height: 100%;
+      }
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 40px;
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 40px;
+        svg {
+          display: none;
+        }
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #525560;
+            cursor: pointer;
+          }
+        }
+      }
+      button {
+        width: 116px;
+        height: 43px;
+        background: #1d2130;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: right;
+          color: #ffffff;
+        }
+      }
+    }
+    .toggle_mobile {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  .header {
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 999px) {
+  .header {
+    padding: 12px 20px;
+  }
+  .header .header_wrapper .navbar ul {
+    gap: 15px;
+  }
+}
+@media (max-width: 750px) {
+  .header {
+    padding: 12px 15px;
+  }
+  .header .header_wrapper .navbar {
+    gap: 25px;
+  }
+  .header .header_wrapper .navbar button {
+    width: 90px;
+    height: 35px;
+  }
+  .header .header_wrapper .logo {
+    width: 100px;
+    height: 23px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media (max-width: 670px) {
+  .header .header_wrapper .navbar ul {
+    gap: 10px;
+  }
+  .header .header_wrapper .navbar button {
+    width: 75px;
+    height: 30px;
+  }
+  .header .header_wrapper .logo {
+    width: 80px;
+    height: 21px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 15px 10px;
+    .header_wrapper {
+      .navbar {
+        ul {
+          margin: 0;
+          padding: 0;
+          position: fixed;
+          width: 60%;
+          height: 100%;
+          right: -500px;
+          top: 0;
+          background: #0b0706;
+          padding: 50px 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-start;
+          gap: 15px;
+          z-index: 4;
+          transition: 0.4s linear all;
+          svg {
+            display: block;
+            color: #ffffff;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+          }
+          li {
+            a {
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 160%;
+              color: #ffffff;
+              opacity: 0.78;
+              transition: 0.3s linear all;
+              &:hover {
+                color: #ffffff;
+                opacity: 1;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+        button {
+          position: absolute;
+          right: 50px;
+        }
+      }
+      .toggle_mobile {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        svg {
+          width: 100%;
+          height: 100%;
+          color: #0b0706;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
