@@ -16,8 +16,11 @@
     justify-content: space-between;
     .logo {
       height: 29px;
-      img {
-        height: 100%;
+      a {
+        text-decoration: none;
+        img {
+          height: 100%;
+        }
       }
     }
     .navbar {
@@ -46,6 +49,10 @@
             line-height: 19px;
             color: #525560;
             cursor: pointer;
+            transition: 0.3s linear all;
+            &:hover {
+              color: #0b0706;
+            }
           }
         }
       }
@@ -60,6 +67,7 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        transition: 0.3s linear all;
         a {
           text-decoration: none;
           font-family: "Roboto", sans-serif;
@@ -69,6 +77,15 @@
           line-height: 19px;
           text-align: right;
           color: #ffffff;
+          transition: 0.3s linear all;
+        }
+        &:hover {
+          background: none;
+          color: #0b0706;
+          border: 1px solid #0b0706;
+          a {
+            color: #0b0706;
+          }
         }
       }
     }

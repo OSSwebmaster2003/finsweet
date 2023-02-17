@@ -14,7 +14,7 @@ function Header(props) {
     <header className="header">
       <div className="header_wrapper">
         <div className="logo">
-          <img src={logo} alt="" />
+          <Link to="/"><img src={logo} alt="" /></Link>
         </div>
         <nav className="navbar">
           <ul style={!mobileToggle ? {right : "-500px"} : {right : "0"} }>
