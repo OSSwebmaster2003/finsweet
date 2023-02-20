@@ -1,3 +1,273 @@
 .home_page {
-  padding-top: 70px;
+  padding-top: 67px;
+  .home_banner {
+    width: 100%;
+    height: 735px;
+  }
+  .about_us_section {
+    width: 100%;
+    padding: 96px calc((100% - 1500px) / 2);
+    padding-bottom: 73px;
+    .about_us_wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 98px;
+      .about_us_info {
+        width: calc(100% - 98px - 480px);
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 24px;
+        .empty_line {
+          width: 72px;
+          height: 1px;
+          background-color: #000;
+          margin-top: 8px;
+        }
+        .about_us_content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 32px;
+          h3 {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #1d2130;
+          }
+          h1 {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            color: #1d2130;
+            width: 80%;
+          }
+          .about_us_description {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 40px;
+            p {
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 160%;
+              color: #525560;
+              width: 75%;
+            }
+          }
+          button {
+            margin-top: 16px;
+            background: #70c174;
+            backdrop-filter: blur(40px);
+            border-radius: 4px;
+            width: 146px;
+            height: 51px;
+            border: 1px solid #70c174;
+            transition: 0.3s linear all;
+            cursor: pointer;
+            a {
+              text-decoration: none;
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              color: #ffffff;
+              transition: 0.3s linear all;
+            }
+            &:hover {
+              background-color: inherit;
+              a {
+                color: #70c174;
+              }
+            }
+          }
+        }
+      }
+      .about_us_photo {
+        width: 480px;
+        height: 578px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .video_player_icon {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1550px) {
+  .home_page {
+    .about_us_section {
+      padding: 96px 25px;
+    }
+  }
+}
+@media (max-width: 1350px) {
+  .home_page
+    .about_us_section
+    .about_us_wrapper
+    .about_us_info
+    .about_us_content
+    h1 {
+    width: 100%;
+  }
+  .home_page
+    .about_us_section
+    .about_us_wrapper
+    .about_us_info
+    .about_us_content
+    .about_us_description
+    p {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .home_page .about_us_section .about_us_wrapper {
+    gap: 40px;
+  }
+  .home_page .about_us_section .about_us_wrapper .about_us_info {
+    width: calc(100% - 40px - 400px);
+  }
+  .home_page .about_us_section .about_us_wrapper .about_us_photo {
+    width: 400px;
+    height: 500px;
+  }
+}
+@media (max-width: 999px) {
+  .home_page .about_us_section {
+    padding: 50px 20px;
+  }
+  .home_page
+    .about_us_section
+    .about_us_wrapper
+    .about_us_info
+    .about_us_content {
+    gap: 15px;
+  }
+  .home_page
+    .about_us_section
+    .about_us_wrapper
+    .about_us_info
+    .about_us_content
+    .about_us_description {
+    gap: 10px;
+  }
+  .home_page
+    .about_us_section
+    .about_us_wrapper
+    .about_us_info
+    .about_us_content
+    button {
+    margin-top: 0;
+  }
+}
+@media (max-width: 900px) {
+  .home_page .about_us_section .about_us_wrapper {
+    gap: 25px;
+  }
+  .home_page .about_us_section .about_us_wrapper .about_us_photo {
+    width: 300px;
+    height: 400px;
+  }
+  .home_page .about_us_section .about_us_wrapper .about_us_info {
+    width: calc(100% - 300px - 25px);
+  }
+}
+@media (max-width: 750px) {
+  .home_page {
+    .home_banner {
+      height: 650px;
+    }
+  }
+  .home_page .about_us_section {
+    padding: 40px 15px;
+  }
+  .home_page
+    .about_us_section
+    .about_us_wrapper
+    .about_us_info
+    .about_us_content
+    h1 {
+    font-size: 40px;
+    line-height: 110%;
+  }
+  .home_page .about_us_section .about_us_wrapper .about_us_info {
+    gap: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .home_page {
+    .home_banner {
+      height: 350px;
+    }
+  }
+  .home_page .about_us_section .about_us_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_page .about_us_section .about_us_wrapper .about_us_info {
+    width: 100%;
+  }
+  .home_page .about_us_section .about_us_wrapper {
+    gap: 50px;
+  }
+  .home_page .about_us_section .about_us_wrapper .about_us_photo {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .home_page .about_us_section {
+    padding: 35px 10px;
+  }
+}
+@media (max-width: 500px) {
+  .home_page .about_us_section .about_us_wrapper .about_us_photo {
+    height: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .home_page .about_us_section .about_us_wrapper .about_us_photo {
+    height: 350px;
+  }
+  .home_page .about_us_section .about_us_wrapper {
+    gap: 25px;
+  }
+  .home_page
+    .about_us_section
+    .about_us_wrapper
+    .about_us_info
+    .about_us_content
+    h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .home_page .about_us_section .about_us_wrapper .about_us_photo {
+    height: 250px;
+  }
 }
