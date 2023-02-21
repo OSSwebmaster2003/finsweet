@@ -156,6 +156,125 @@
       }
     }
   }
+  .what_we_do_section {
+    width: 100%;
+    background: #eff7f2;
+    padding: 96px calc((100% - 1500px) / 2);
+    .what_we_do_wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 96px;
+      .what_we_do_info {
+        width: calc(100% - 480px - 96px);
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 24px;
+        .empty_line {
+          width: 72px;
+          height: 2px;
+          background-color: #1d2130;
+          margin-top: 7px;
+        }
+        .what_we_do_content {
+          width: calc(100% - 96px);
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 32px;
+          h3 {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #1d2130;
+          }
+          .what_we_do_header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 16px;
+            h1 {
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 48px;
+              line-height: 120%;
+              color: #1d2130;
+              margin-bottom: 0;
+            }
+            p {
+              width: 90%;
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 160%;
+              color: #525560;
+            }
+          }
+          .what_we_do_body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 0 24px;
+            border-left: 1px solid #e5e5e5;
+            gap: 24px;
+            .what_we_do_card {
+              width: 60%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 24px;
+              .card_body {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 8px;
+                h1 {
+                  font-family: "Roboto", sans-serif;
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 24px;
+                  line-height: 28px;
+                  color: #1d2130;
+                  margin-bottom: 0;
+                }
+                p {
+                  font-family: "Roboto", sans-serif;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 160%;
+                  color: #525560;
+                }
+              }
+            }
+          }
+        }
+      }
+      .what_we_do_img {
+        width: 480px;
+        height: 658px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 1550px) {
   .home_page {
@@ -166,6 +285,29 @@
       padding-left: 25px;
       padding-right: 25px;
     }
+    .what_we_do_section {
+      padding: 96px 25px;
+    }
+  }
+}
+@media (max-width: 1380px) {
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content
+    .what_we_do_header
+    p {
+    width: 100%;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content
+    .what_we_do_body
+    .what_we_do_card {
+    width: 90%;
   }
 }
 @media (max-width: 1350px) {
@@ -198,6 +340,30 @@
     width: 400px;
     height: 500px;
   }
+  .home_page .what_we_do_section .what_we_do_wrapper {
+    gap: 50px;
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_img {
+    width: 350px;
+    height: 500px;
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_info {
+    width: calc(100% - 50px - 350px);
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .empty_line {
+    width: 50px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content {
+    width: calc(100% - 74px);
+  }
 }
 @media (max-width: 999px) {
   .home_page .about_us_section {
@@ -226,6 +392,45 @@
     button {
     margin-top: 0;
   }
+  .home_page .what_we_do_section {
+    padding: 85px 20px;
+  }
+}
+@media (max-width: 950px) {
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .empty_line {
+    width: 25px;
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_info {
+    gap: 15px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content {
+    width: calc(100% - 40px);
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content
+    .what_we_do_body {
+    padding: 0 15px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content
+    .what_we_do_body
+    .what_we_do_card {
+    width: 100%;
+  }
 }
 @media (max-width: 900px) {
   .home_page .about_us_section .about_us_wrapper {
@@ -237,6 +442,58 @@
   }
   .home_page .about_us_section .about_us_wrapper .about_us_info {
     width: calc(100% - 300px - 25px);
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_img {
+    width: 300px;
+    height: 400px;
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper {
+    gap: 25px;
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_info {
+    width: calc(100% - 325px);
+    max-height: 400px;
+    overflow-y: scroll;
+    padding: 0 15px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    ::-webkit-scrollbar {
+    width: 8px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    ::-webkit-scrollbar-track {
+    border-radius: 8px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    ::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 8px;
+    outline: -1px solid slategray;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content {
+    gap: 20px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content
+    .what_we_do_header {
+    gap: 8px;
   }
 }
 @media (max-width: 750px) {
@@ -260,6 +517,19 @@
   .home_page .about_us_section .about_us_wrapper .about_us_info {
     gap: 10px;
   }
+  .home_page .what_we_do_section {
+    padding: 80px 15px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content
+    .what_we_do_header
+    h1 {
+    font-size: 35px;
+    line-height: 110%;
+  }
 }
 @media (max-width: 700px) {
   .home_page {
@@ -282,15 +552,42 @@
     width: 100%;
     height: 500px;
   }
+  .home_page .what_we_do_section .what_we_do_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_info {
+    padding: 0;
+    width: 100%;
+    max-height: inherit;
+    overflow-y: hidden;
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_img {
+    width: 100%;
+    height: 550px;
+  }
 }
 @media (max-width: 600px) {
   .home_page .about_us_section {
     padding: 35px 10px;
   }
+  .home_page .what_we_do_section {
+    padding: 55px 10px;
+  }
+}
+@media (max-width: 550px) {
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_img {
+    height: 400px;
+  }
 }
 @media (max-width: 500px) {
   .home_page .about_us_section .about_us_wrapper .about_us_photo {
     height: 400px;
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_img {
+    height: 360px;
   }
 }
 @media (max-width: 400px) {
@@ -308,9 +605,50 @@
     h1 {
     font-size: 30px;
   }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_img {
+    height: 350px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content
+    .what_we_do_header
+    h1 {
+    font-size: 30px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content
+    .what_we_do_body
+    .what_we_do_card {
+    gap: 10px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .empty_line {
+    width: 15px;
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_info {
+    gap: 7px;
+  }
+  .home_page
+    .what_we_do_section
+    .what_we_do_wrapper
+    .what_we_do_info
+    .what_we_do_content {
+    width: calc(100% - 22px);
+  }
 }
 @media (max-width: 350px) {
   .home_page .about_us_section .about_us_wrapper .about_us_photo {
     height: 250px;
+  }
+  .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_img {
+    height: 300px;
   }
 }
