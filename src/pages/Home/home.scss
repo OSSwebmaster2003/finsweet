@@ -22,11 +22,12 @@
         gap: 24px;
         .empty_line {
           width: 72px;
-          height: 1px;
+          height: 2px;
           background-color: #000;
           margin-top: 8px;
         }
         .about_us_content {
+          width: calc(100% - 96px);
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -364,6 +365,16 @@
     .what_we_do_content {
     width: calc(100% - 74px);
   }
+  .home_page .about_us_section .about_us_wrapper .about_us_info .empty_line {
+    width: 50px;
+  }
+  .home_page
+    .about_us_section
+    .about_us_wrapper
+    .about_us_info
+    .about_us_content {
+    width: calc(100% - 74px);
+  }
 }
 @media (max-width: 999px) {
   .home_page .about_us_section {
@@ -431,6 +442,19 @@
     .what_we_do_card {
     width: 100%;
   }
+  .home_page .about_us_section .about_us_wrapper .about_us_info .empty_line {
+    width: 25px;
+  }
+  .home_page .about_us_section .about_us_wrapper .about_us_info {
+    gap: 15px;
+  }
+  .home_page
+    .about_us_section
+    .about_us_wrapper
+    .about_us_info
+    .about_us_content {
+    width: calc(100% - 40px);
+  }
 }
 @media (max-width: 900px) {
   .home_page .about_us_section .about_us_wrapper {
@@ -456,27 +480,15 @@
     overflow-y: scroll;
     padding: 0 15px;
   }
-  .home_page
-    .what_we_do_section
-    .what_we_do_wrapper
-    .what_we_do_info
-    ::-webkit-scrollbar {
-    width: 8px;
+  .what_we_do_info::-webkit-scrollbar {
+    width: 7px;
   }
-  .home_page
-    .what_we_do_section
-    .what_we_do_wrapper
-    .what_we_do_info
-    ::-webkit-scrollbar-track {
+  .what_we_do_info::-webkit-scrollbar-track {
     border-radius: 8px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
-  .home_page
-    .what_we_do_section
-    .what_we_do_wrapper
-    .what_we_do_info
-    ::-webkit-scrollbar-thumb {
-    background-color: red;
+  .what_we_do_info::-webkit-scrollbar-thumb {
+    background-color: #1d2130;
     border-radius: 8px;
     outline: -1px solid slategray;
   }
@@ -641,6 +653,19 @@
     .what_we_do_wrapper
     .what_we_do_info
     .what_we_do_content {
+    width: calc(100% - 22px);
+  }
+  .home_page .about_us_section .about_us_wrapper .about_us_info .empty_line {
+    width: 15px;
+  }
+  .home_page .about_us_section .about_us_wrapper .about_us_info {
+    gap: 7px;
+  }
+  .home_page
+    .about_us_section
+    .about_us_wrapper
+    .about_us_info
+    .about_us_content {
     width: calc(100% - 22px);
   }
 }
