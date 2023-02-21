@@ -1,0 +1,24 @@
+.slick-slide {
+  padding-right: 96px;
+}
+
+@media (max-width: 1100px) {
+  .slick-slide {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 750px) {
+  .slick-slide {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .slick-slide {
+    padding-right: 20px;
+  }
+  .slider_card {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}

@@ -117,11 +117,54 @@
       }
     }
   }
+  .supporters_section {
+    width: 100%;
+    padding: 0 calc((100% - 1500px) / 2);
+    padding-bottom: 65.51px;
+    .supporters_wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 33.51px;
+      .supporters_header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 24px;
+        h1 {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #1d2130;
+          margin-bottom: 0;
+        }
+        .empty_line {
+          width: calc(100% - 24px - 165px);
+          height: 1px;
+          background: #e5e5e5;
+        }
+      }
+      .supporters_info {
+        width: 100%;
+      }
+    }
+  }
 }
 @media (max-width: 1550px) {
   .home_page {
     .about_us_section {
       padding: 96px 25px;
+    }
+    .supporters_section {
+      padding-left: 25px;
+      padding-right: 25px;
     }
   }
 }

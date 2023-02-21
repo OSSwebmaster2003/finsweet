@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Banner } from '../../components';
+import { Banner, Swiper } from '../../components';
 import about_us from "../../assets/home/about_us.png";
 import video_player_icon from "../../assets/icons/video_play_icon.png";
 import "./home.scss";
@@ -30,6 +30,17 @@ function Home(props) {
           <div className="about_us_photo">
             <img src={about_us} alt="" />
             <img src={video_player_icon} alt="" className="video_player_icon" />
+          </div>
+        </div>
+      </div>
+      <div className="supporters_section">
+        <div className="supporters_wrapper">
+          <div className="supporters_header">
+            <h1>our Supporters</h1>
+            <div className="empty_line"></div>
+          </div>
+          <div className="supporters_info">
+            <Swiper/>
           </div>
         </div>
       </div>
