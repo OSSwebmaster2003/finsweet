@@ -363,6 +363,17 @@
       }
     }
   }
+  .join_team_section {
+    width: 100%;
+    padding: 96px calc((100% - 1500px) / 2);
+    .join_team_wrapper {
+      width: 100%;
+      height: 384px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 @media (max-width: 1550px) {
   .home_page {
@@ -380,6 +391,9 @@
       padding: 96px 25px;
     }
     .chart_section {
+      padding: 96px 25px;
+    }
+    .join_team_section {
       padding: 96px 25px;
     }
   }
@@ -547,6 +561,9 @@
   }
   .home_page .chart_section .chart_wrapper .chart_info {
     width: calc(100% - 290px);
+  }
+  .home_page .join_team_section {
+    padding: 85px 20px;
   }
 }
 @media (max-width: 950px) {
@@ -732,6 +749,12 @@
   .home_page .chart_section .chart_wrapper .chart_info h1 {
     font-size: 35px;
   }
+  .home_page .join_team_section {
+    padding: 70px 15px;
+  }
+  .home_page .join_team_section .join_team_wrapper {
+    height: 320px;
+  }
 }
 @media (max-width: 700px) {
   .home_page {
@@ -800,6 +823,9 @@
   .home_page .chart_section {
     padding: 55px 10px;
   }
+  .home_page .join_team_section {
+    padding: 55px 10px;
+  }
 }
 @media (max-width: 550px) {
   .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_img {
@@ -812,6 +838,12 @@
   }
   .home_page .what_we_do_section .what_we_do_wrapper .what_we_do_img {
     height: 360px;
+  }
+  .home_page .join_team_section {
+    padding: 30px 10px;
+  }
+  .home_page .join_team_section .join_team_wrapper {
+    height: 280px;
   }
 }
 @media (max-width: 400px) {

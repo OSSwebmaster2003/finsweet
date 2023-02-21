@@ -9,6 +9,7 @@ import tree_planting from "../../assets/icons/tree_planting.png";
 import protect_land from "../../assets/icons/protect_land.png";
 import animal_safety from "../../assets/icons/animal_safety.png";
 import "./home.scss";
+import JoinTeam from '../../components/JoinTeam/JoinTeam';
 
 function Home(props) {
   return (
@@ -130,6 +131,11 @@ function Home(props) {
           <div className="chart_img">
             <HomeChart/>
           </div>
+        </div>
+      </div>
+      <div className="join_team_section">
+        <div className="join_team_wrapper">
+          <JoinTeam/>
         </div>
       </div>
     </div>
