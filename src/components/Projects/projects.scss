@@ -1,0 +1,119 @@
+.projects_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 65px;
+  .projects_header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    .empty_line {
+      width: 72px;
+      height: 2px;
+      background: #1d2130;
+      margin-top: 7.5px;
+    }
+    .projects_header_content {
+      width: 610px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 32px;
+      h3 {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #1d2130;
+      }
+      h1 {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        color: #1d2130;
+      }
+    }
+  }
+  .projects_body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 24px;
+    .project_card {
+      height: 421px;
+      padding: 48px;
+      padding-top: 80px;
+      opacity: 0.95;
+      position: relative;
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 12px;
+      filter: brightness(100%);
+      transition: 0.2s linear all;
+      &:hover {
+        filter: brightness(85%);
+      }
+      h1 {
+        margin-bottom: 0;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 150%;
+        color: #ffffff;
+      }
+      p {
+        margin-top: 16px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #ffffff;
+      }
+      button {
+        width: 132px;
+        height: 51px;
+        background: #ffffff;
+        backdrop-filter: blur(40px);
+        border-radius: 4px;
+        border: 1px solid #ffffff;
+        cursor: pointer;
+        position: absolute;
+        left: 48px;
+        bottom: 48px;
+        z-index: 2;
+        transition: 0.3s linear all;
+        a {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #1d2130;
+          text-decoration: none;
+          transition: 0.3s linear all;
+        }
+        &:hover {
+          background: none;
+          backdrop-filter: none;
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

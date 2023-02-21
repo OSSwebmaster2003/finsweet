@@ -276,6 +276,10 @@
       }
     }
   }
+  .projects_section {
+    width: 100%;
+    padding: 96px calc((100% - 1500px) / 2);
+  }
 }
 @media (max-width: 1550px) {
   .home_page {
@@ -287,6 +291,9 @@
       padding-right: 25px;
     }
     .what_we_do_section {
+      padding: 96px 25px;
+    }
+    .projects_section {
       padding: 96px 25px;
     }
   }
@@ -328,6 +335,11 @@
     .about_us_description
     p {
     width: 100%;
+  }
+}
+@media (max-width: 1300px) {
+  .projects_wrapper .projects_body {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
 }
 @media (max-width: 1200px) {
@@ -375,7 +387,26 @@
     .about_us_content {
     width: calc(100% - 74px);
   }
+  .projects_wrapper .projects_header .empty_line {
+    width: 50px;
+  }
 }
+@media (max-width: 1150px) {
+  .projects_wrapper {
+    gap: 50px;
+  }
+  .projects_wrapper .projects_body {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .projects_wrapper .projects_body .project_card {
+    padding: 20px;
+    padding-top: 35px;
+  }
+  .projects_wrapper .projects_body .project_card button {
+    left: 20px;
+  }
+}
+
 @media (max-width: 999px) {
   .home_page .about_us_section {
     padding: 50px 20px;
@@ -405,6 +436,12 @@
   }
   .home_page .what_we_do_section {
     padding: 85px 20px;
+  }
+  .home_page .projects_section {
+    padding: 85px 20px;
+  }
+  .projects_wrapper .projects_body .project_card {
+    height: 380px;
   }
 }
 @media (max-width: 950px) {
@@ -453,6 +490,15 @@
     .about_us_wrapper
     .about_us_info
     .about_us_content {
+    width: calc(100% - 40px);
+  }
+  .projects_wrapper .projects_header .empty_line {
+    width: 25px;
+  }
+  .projects_wrapper .projects_header {
+    gap: 15px;
+  }
+  .projects_wrapper .projects_header .projects_header_content {
     width: calc(100% - 40px);
   }
 }
@@ -542,6 +588,12 @@
     font-size: 35px;
     line-height: 110%;
   }
+  .home_page .projects_section {
+    padding: 70px 15px;
+  }
+  .projects_wrapper .projects_header .projects_header_content h1 {
+    font-size: 35px;
+  }
 }
 @media (max-width: 700px) {
   .home_page {
@@ -586,6 +638,9 @@
     padding: 35px 10px;
   }
   .home_page .what_we_do_section {
+    padding: 55px 10px;
+  }
+  .home_page .projects_section {
     padding: 55px 10px;
   }
 }
@@ -667,6 +722,37 @@
     .about_us_info
     .about_us_content {
     width: calc(100% - 22px);
+  }
+  .projects_wrapper .projects_header .empty_line {
+    width: 15px;
+  }
+  .projects_wrapper .projects_header {
+    gap: 7px;
+  }
+  .projects_wrapper .projects_header .projects_header_content {
+    width: calc(100% - 22px);
+    gap: 20px;
+  }
+  .projects_wrapper .projects_header .projects_header_content h1 {
+    font-size: 30px;
+  }
+  .projects_wrapper {
+    gap: 25px;
+  }
+  .projects_wrapper .projects_body {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+  }
+  .projects_wrapper .projects_body .project_card {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .projects_wrapper .projects_body .project_card button {
+    left: 10px;
   }
 }
 @media (max-width: 350px) {

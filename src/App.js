@@ -25,7 +25,7 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donation" element={<Donation />} />
-        <Route path="/project-read-more" element={<FullProject />} />
+        <Route path="/project-read-more/:id" element={<FullProject />} />
         <Route path="/blogs-read-more" element={<FullBlog />} />
         <Route path="/events-read-more" element={<FullEvent />} />
       </Routes>
