@@ -280,6 +280,89 @@
     width: 100%;
     padding: 96px calc((100% - 1500px) / 2);
   }
+  .chart_section {
+    width: 100%;
+    padding: 96px calc((100% - 1500px) / 2);
+    background: #0b0706;
+    .chart_wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .chart_info {
+        width: 675px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+        h1 {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 120%;
+          color: #ffffff;
+        }
+        p {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: #ffffff;
+          opacity: 0.6;
+        }
+        .chart_percents {
+          width: 100%;
+          margin-top: 16px;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          gap: 24px;
+          .chart_percent {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            > div {
+              width: 16px;
+              height: 16px;
+              border: none;
+              outline: none;
+              border-radius: 4px;
+            }
+            .green_btn {
+              background-color: #bef3c0;
+            }
+            .violet_btn {
+              background-color: #ac94f1;
+            }
+            .less_yellow_btn {
+              background-color: #fff0ca;
+            }
+            .yellow_btn {
+              background-color: #f9cf64;
+            }
+            .purple_btn {
+              background-color: #f38fbf;
+            }
+            h4 {
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 160%;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .chart_img {
+        width: 375px;
+        height: 375px;
+      }
+    }
+  }
 }
 @media (max-width: 1550px) {
   .home_page {
@@ -294,6 +377,9 @@
       padding: 96px 25px;
     }
     .projects_section {
+      padding: 96px 25px;
+    }
+    .chart_section {
       padding: 96px 25px;
     }
   }
@@ -405,6 +491,12 @@
   .projects_wrapper .projects_body .project_card button {
     left: 20px;
   }
+  .home_page .chart_section .chart_wrapper .chart_info {
+    width: 550px;
+  }
+  .home_page .chart_section .chart_wrapper .chart_info .chart_percents {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
 }
 
 @media (max-width: 999px) {
@@ -442,6 +534,19 @@
   }
   .projects_wrapper .projects_body .project_card {
     height: 380px;
+  }
+  .home_page .chart_section {
+    padding: 85px 20px;
+  }
+  .home_page .chart_section .chart_wrapper .chart_img {
+    width: 270px;
+    height: 270px;
+  }
+  .home_page .chart_section .chart_wrapper {
+    gap: 20px;
+  }
+  .home_page .chart_section .chart_wrapper .chart_info {
+    width: calc(100% - 290px);
   }
 }
 @media (max-width: 950px) {
@@ -554,6 +659,33 @@
     gap: 8px;
   }
 }
+@media (max-width: 799px) {
+  .home_page .chart_section .chart_wrapper .chart_info {
+    max-height: 350px;
+    padding-right: 15px;
+    overflow-y: scroll;
+  }
+  .chart_info::-webkit-scrollbar {
+    width: 8px;
+  }
+  .chart_info::-webkit-scrollbar-track {
+    border-radius: 8px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .chart_info::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 8px;
+    outline: -1px solid slategray;
+  }
+  .home_page .chart_section .chart_wrapper .chart_info .chart_percents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
 @media (max-width: 750px) {
   .home_page {
     .home_banner {
@@ -594,6 +726,12 @@
   .projects_wrapper .projects_header .projects_header_content h1 {
     font-size: 35px;
   }
+  .home_page .chart_section {
+    padding: 70px 15px;
+  }
+  .home_page .chart_section .chart_wrapper .chart_info h1 {
+    font-size: 35px;
+  }
 }
 @media (max-width: 700px) {
   .home_page {
@@ -632,6 +770,22 @@
     width: 100%;
     height: 550px;
   }
+  .home_page .chart_section .chart_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .home_page .chart_section .chart_wrapper .chart_info {
+    width: 100%;
+    padding: 0;
+    overflow-y: hidden;
+    max-height: inherit;
+  }
+  .home_page .chart_section .chart_wrapper .chart_info .chart_percents {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  }
 }
 @media (max-width: 600px) {
   .home_page .about_us_section {
@@ -641,6 +795,9 @@
     padding: 55px 10px;
   }
   .home_page .projects_section {
+    padding: 55px 10px;
+  }
+  .home_page .chart_section {
     padding: 55px 10px;
   }
 }
@@ -753,6 +910,29 @@
   }
   .projects_wrapper .projects_body .project_card button {
     left: 10px;
+  }
+  .home_page .chart_section .chart_wrapper .chart_info h1 {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .home_page .chart_section .chart_wrapper .chart_info p {
+    width: 100%;
+    text-align: center;
+  }
+  .home_page .chart_section .chart_wrapper .chart_info .chart_percents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .home_page
+    .chart_section
+    .chart_wrapper
+    .chart_info
+    .chart_percents
+    .chart_percent {
+    width: 100%;
   }
 }
 @media (max-width: 350px) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Banner, Projects, Swiper } from '../../components';
+import { Banner, HomeChart, Projects, Swiper } from '../../components';
 import about_us from "../../assets/home/about_us.png";
 import video_player_icon from "../../assets/icons/video_play_icon.png";
 import what_we_do from "../../assets/home/what_we_do.png";
@@ -98,6 +98,39 @@ function Home(props) {
       </div>
       <div className="projects_section">
         <Projects/>
+      </div>
+      <div className="chart_section">
+        <div className="chart_wrapper">
+          <div className="chart_info">
+            <h1>How we spend your donations and where it goes</h1>
+            <p>We understand that when you make a donation, you want to know exactly where your money is going and we pledge to be transparent.</p>
+            <div className="chart_percents">
+              <div className="chart_percent">
+                <div className="green_btn"></div>
+                <h4>40% planting trees</h4>
+              </div>
+              <div className="chart_percent">
+                <div className="violet_btn"></div>
+                <h4>35% cleanliness program</h4>
+              </div>
+              <div className="chart_percent">
+                <div className="less_yellow_btn"></div>
+                <h4>10% helping people</h4>
+              </div>
+              <div className="chart_percent">
+                <div className="yellow_btn"></div>
+                <h4>10% animal safety</h4>
+              </div>
+              <div className="chart_percent">
+                <div className="purple_btn"></div>
+                <h4>5% feeding the poor</h4>
+              </div>
+            </div>
+          </div>
+          <div className="chart_img">
+            <HomeChart/>
+          </div>
+        </div>
       </div>
     </div>
   );
