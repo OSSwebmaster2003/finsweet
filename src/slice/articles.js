@@ -12,6 +12,10 @@ import news1 from "../assets/news/news1.png";
 import news2 from "../assets/news/news2.png";
 import news3 from "../assets/news/news3.png";
 import news4 from "../assets/news/news4.png";
+import award1 from "../assets/awards/award1.png";
+import award2 from "../assets/awards/award2.png";
+import award3 from "../assets/awards/award3.png";
+import award4 from "../assets/awards/award4.png";
 
 const initialState = {
   supporters: [
@@ -120,6 +124,36 @@ const initialState = {
       title: "Weekly cleaning program",
       descr:
         "Let's face it: Very few people actually like cleaning. Sure, we like a clean house, but who wouldn't happily shun scrubbing a toilet to hang out with friends or disappear into a good book? Thankfully there are ways to make cleaning less of a chore. By tackling household jobs on a regular schedule, you can keep your home clean without spending all your time with a sponge. This cleaning checklist includes all of the essential chores to tackle, according to the pros. Follow the house cleaning schedule loosely or to a T—either way, you’ll be pleased with the progress and you'll enjoy a cleaner home every day.",
+    },
+  ],
+  awards: [
+    {
+      id: 1,
+      year: "2021",
+      title: "Best NGO Award",
+      location: "Berlin, Germany",
+      img: award1,
+    },
+    {
+      id: 2,
+      year: "2018",
+      title: "Global Award",
+      location: "New York, USA",
+      img: award2,
+    },
+    {
+      id: 3,
+      year: "2014",
+      title: "Foresto Award",
+      location: "New Delhi, India",
+      img: award3,
+    },
+    {
+      id: 4,
+      year: "2010",
+      title: "Earth Saver Award",
+      location: "Vienna, Austria",
+      img: award4,
     },
   ],
 };

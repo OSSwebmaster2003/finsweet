@@ -192,6 +192,87 @@
       }
     }
   }
+  .awards_section {
+    width: 100%;
+    padding: 96px calc((100% - 1350px) / 2);
+    .awards_wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 48px;
+      h1 {
+        width: 100%;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        color: #1d2130;
+      }
+      .awards_info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        .awards_card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 16px;
+          .card_img {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .card_body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            h1 {
+              width: 100%;
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 160%;
+              text-align: center;
+              color: #1d2130;
+            }
+            h2 {
+              width: 100%;
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 160%;
+              text-align: center;
+              color: #1d2130;
+            }
+            h3 {
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 160%;
+              text-align: center;
+              text-transform: uppercase;
+              color: #1d2130;
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 1550px) {
   .about_us_page .know_about_us_section {
@@ -216,6 +297,9 @@
   .about_us_page .supporters_section {
     padding: 96px 25px;
     padding-top: 0;
+  }
+  .about_us_page .awards_section {
+    padding: 96px 100px;
   }
 }
 @media (max-width: 1280px) {
@@ -309,6 +393,9 @@
   .about_us_page .supporters_section {
     padding: 85px 20px;
     padding-top: 0;
+  }
+  .about_us_page .awards_section {
+    padding: 85px 50px;
   }
 }
 @media (max-width: 950px) {
@@ -421,6 +508,13 @@
     padding: 70px 15px;
     padding-top: 0;
   }
+  .about_us_page .awards_section {
+    padding: 70px 15px;
+  }
+  .about_us_page .awards_section .awards_wrapper h1 {
+    font-size: 35px;
+    line-height: 110%;
+  }
 }
 @media (max-width: 700px) {
   .about_us_page .banner_section .banner_wrapper {
@@ -490,6 +584,16 @@
     padding: 50px 10px;
     padding-top: 0;
   }
+  .about_us_page .awards_section {
+    padding: 50px 10px;
+  }
+  .about_us_page .awards_section .awards_wrapper .awards_info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .about_us_page .awards_section .awards_wrapper {
+    gap: 25px;
+  }
 }
 @media (max-width: 450px) {
   .about_us_page
@@ -509,6 +613,10 @@
   }
   .about_us_page .missions_section .missions_wrapper {
     gap: 35px;
+  }
+  .about_us_page .awards_section .awards_wrapper .awards_info {
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
 }
 @media (max-width: 400px) {
@@ -535,6 +643,9 @@
     div
     p {
     font-size: 14px;
+  }
+  .about_us_page .awards_section .awards_wrapper h1 {
+    font-size: 30px;
   }
 }
 @media (max-width: 350px) {

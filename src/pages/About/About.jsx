@@ -3,8 +3,10 @@ import video_play_icon from "../../assets/icons/video_play_icon.png";
 import banner from "../../assets/about/banner.png";
 import Swiper from '../../components/Swiper/Swiper';
 import "./about.scss";
+import { useSelector } from 'react-redux';
 
 function About(props) {
+  const {awards} = useSelector(state => state.articlesSlice);
   return (
     <div className='about_us_page'>
       <div className="know_about_us_section">
@@ -55,6 +57,25 @@ function About(props) {
           </div>
           <div className="supporters_info">
             <Swiper/>
+          </div>
+        </div>
+      </div>
+      <div className="awards_section">
+        <div className="awards_wrapper">
+          <h1>Awards & Recognitions</h1>
+          <div className="awards_info">
+            {awards.map((item) => (
+              <div className="awards_card" key={item.id}>
+                <div className="card_img">
+                  <img src={item.img} alt="" />
+                </div>
+                <div className="card_body">
+                  <h1>{item.year}</h1>
+                  <h2>{item.title}</h2>
+                  <h3>{item.location}</h3>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
