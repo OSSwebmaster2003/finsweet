@@ -104,6 +104,24 @@ const initialState = {
       bg_img: news2,
     },
   ],
+  events: [
+    {
+      id: 1,
+      date: "23",
+      month: "SEP",
+      title: "Say no to plastic usage and save the planet",
+      descr:
+        "Plastic pollution is a problem that the whole world is facing together. We are finding microplastic pieces in our waterways, in the food we eat, and in the water we drink. Collectively, we need to take action and say no to plastic. Plastic waste does not degrade at a sustainable rate. The more we continue to make, the more waste continues to build up. When plastic waste is not disposed of properly, it ends up in the environment, which is causing devastating impacts. Each single-use plastic item we use today adds to the mass problem of tomorrow (and beyond). But just how bad is it? And how can we reduce the issue? This article explains why we should and how we can say no to plastic, with great alternative options.",
+    },
+    {
+      id: 2,
+      date: "25",
+      month: "SEP",
+      title: "Weekly cleaning program",
+      descr:
+        "Let's face it: Very few people actually like cleaning. Sure, we like a clean house, but who wouldn't happily shun scrubbing a toilet to hang out with friends or disappear into a good book? Thankfully there are ways to make cleaning less of a chore. By tackling household jobs on a regular schedule, you can keep your home clean without spending all your time with a sponge. This cleaning checklist includes all of the essential chores to tackle, according to the pros. Follow the house cleaning schedule loosely or to a T—either way, you’ll be pleased with the progress and you'll enjoy a cleaner home every day.",
+    },
+  ],
 };
 
 export const articlesSlice = createSlice({

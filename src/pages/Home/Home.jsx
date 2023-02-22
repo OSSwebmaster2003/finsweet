@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Banner, HomeChart, Projects, Swiper } from '../../components';
+import { Banner, Events, HomeChart, Projects, Swiper } from '../../components';
 import about_us from "../../assets/home/about_us.png";
 import video_player_icon from "../../assets/icons/video_play_icon.png";
 import what_we_do from "../../assets/home/what_we_do.png";
@@ -148,6 +148,11 @@ function Home(props) {
           <div className="news_info">
             <NewsSlider/>
           </div>
+        </div>
+      </div>
+      <div className="events_section">
+        <div className="events_wrapper">
+          <Events/>
         </div>
       </div>
     </div>

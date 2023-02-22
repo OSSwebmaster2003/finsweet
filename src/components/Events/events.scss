@@ -1,0 +1,196 @@
+.events {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 48px;
+  .events_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    h1 {
+      margin-bottom: 0;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 140%;
+      color: #1d2130;
+    }
+    .empty_line {
+      width: calc(100% - 218px);
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
+  .events_body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    gap: 24px;
+    .events_card {
+      height: 200px;
+      background: #bef3c0;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      padding: 32px 40px;
+      .card_wrapper {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        .card_date {
+          width: 55px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          h1 {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 120%;
+            color: #1d2130;
+          }
+          p {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: #1d2130;
+          }
+        }
+        .card_info {
+          width: calc(100% - 56px - 45px);
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: 8px;
+          .card_info_header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 23px;
+            h2 {
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: #1d2130;
+            }
+            .empty_line {
+              width: 44px;
+              height: 2px;
+              background-color: #1d2130;
+            }
+          }
+          h3 {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 150%;
+            color: #1d2130;
+          }
+        }
+        .full_card {
+          width: 56px;
+          height: 56px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 40px;
+          a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #ffffff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1480px) {
+  .events .events_body {
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  }
+}
+@media (max-width: 1280px) {
+  .events .events_body {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+}
+@media (max-width: 750px) {
+  .events .events_header h1 {
+    font-size: 35px;
+  }
+  .events .events_header .empty_line {
+    width: calc(100% - 194px);
+  }
+}
+@media (max-width: 600px) {
+  .events {
+    gap: 20px;
+  }
+  .events .events_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  .events .events_body .events_card {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .events .events_header {
+    gap: 0px;
+  }
+  .events .events_header .empty_line {
+    display: none;
+  }
+  .events .events_body .events_card {
+    padding: 10px;
+    height: 150px;
+  }
+  .events .events_body .events_card .card_wrapper {
+    gap: 15px;
+  }
+  .events .events_body .events_card .card_wrapper .card_info {
+    width: calc(100% - 56px - 30px - 55px);
+  }
+  .events .events_body .events_card .card_wrapper .card_info h3 {
+    font-size: 25px;
+    line-height: 110%;
+  }
+  .events .events_body .events_card .card_wrapper .full_card {
+    margin-top: 0;
+  }
+}
+@media (max-width: 400px) {
+  .events .events_body .events_card .card_wrapper .card_info h3 {
+    font-size: 20px;
+  }
+}
