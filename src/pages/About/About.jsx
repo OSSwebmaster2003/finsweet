@@ -29,6 +29,25 @@ function About(props) {
           <img className='play_icon' src={video_play_icon} alt="" />
         </div>
       </div>
+      <div className="missions_section">
+        <div className="missions_wrapper">
+          <div className="mission_card">
+            <div className="card_wrapper">
+              <h2>our mission</h2>
+              <h1>We make the world we save our own environment</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+            </div>
+          </div>
+          <div className="mission_card">
+            <div className="card_wrapper">
+              <h2>our Vision</h2>
+              <h1>Plant more trees to make world air pollution free</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="supporters_section"></div>
     </div>
   );
 }

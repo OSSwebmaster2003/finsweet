@@ -108,6 +108,60 @@
       }
     }
   }
+  .missions_section {
+    width: 100%;
+    background: #eff7f2;
+    padding: 96px calc((100% - 1500px) / 2);
+    .missions_wrapper {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 96px;
+      .mission_card {
+        width: 80%;
+        .card_wrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 8px;
+          h2 {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #1d2130;
+            margin-bottom: 8px;
+            width: 100%;
+          }
+          h1 {
+            width: 100%;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 150%;
+            color: #1d2130;
+          }
+          p {
+            width: 100%;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #1d2130;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 1550px) {
   .about_us_page .know_about_us_section {
@@ -125,6 +179,9 @@
   .about_us_page .banner_section .banner_wrapper .play_icon {
     width: 64px;
     height: 64px;
+  }
+  .about_us_page .missions_section {
+    padding: 96px 25px;
   }
 }
 @media (max-width: 1280px) {
@@ -208,6 +265,12 @@
   }
   .about_us_page .banner_section .banner_wrapper img {
     width: calc(100% - 40px);
+  }
+  .about_us_page .missions_section .missions_wrapper {
+    gap: 40px;
+  }
+  .about_us_page .missions_section {
+    padding: 85px 20px;
   }
 }
 @media (max-width: 950px) {
@@ -313,10 +376,46 @@
   .about_us_page .know_about_us_section .know_about_us_wrapper {
     gap: 15px;
   }
+  .about_us_page .missions_section {
+    padding: 70px 15px;
+  }
 }
 @media (max-width: 700px) {
   .about_us_page .banner_section .banner_wrapper {
     height: 250px;
+  }
+  .about_us_page
+    .missions_section
+    .missions_wrapper
+    .mission_card
+    .card_wrapper
+    h1 {
+    font-size: 22px;
+    line-height: 110%;
+  }
+  .about_us_page
+    .missions_section
+    .missions_wrapper
+    .mission_card
+    .card_wrapper
+    p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .about_us_page .missions_section .missions_wrapper {
+    gap: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .about_us_page .missions_section .missions_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  .about_us_page .missions_section .missions_wrapper .mission_card {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
@@ -342,6 +441,9 @@
     width: 32px;
     height: 32px;
   }
+  .about_us_page .missions_section {
+    padding: 50px 10px;
+  }
 }
 @media (max-width: 450px) {
   .about_us_page
@@ -358,6 +460,9 @@
   }
   .about_us_page .banner_section .banner_wrapper {
     height: 160px;
+  }
+  .about_us_page .missions_section .missions_wrapper {
+    gap: 35px;
   }
 }
 @media (max-width: 400px) {
