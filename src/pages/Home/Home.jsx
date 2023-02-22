@@ -10,6 +10,7 @@ import protect_land from "../../assets/icons/protect_land.png";
 import animal_safety from "../../assets/icons/animal_safety.png";
 import "./home.scss";
 import JoinTeam from '../../components/JoinTeam/JoinTeam';
+import NewsSlider from '../../components/NewsSlider/NewsSlider';
 
 function Home(props) {
   return (
@@ -136,6 +137,17 @@ function Home(props) {
       <div className="join_team_section">
         <div className="join_team_wrapper">
           <JoinTeam/>
+        </div>
+      </div>
+      <div className="news_section">
+        <div className="news_wrapper">
+          <div className="news_header">
+            <h1>Read Our News</h1>
+            <div className="empty_line"></div>
+          </div>
+          <div className="news_info">
+            <NewsSlider/>
+          </div>
         </div>
       </div>
     </div>
