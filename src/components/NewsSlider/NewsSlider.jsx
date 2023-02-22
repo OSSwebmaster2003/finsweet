@@ -12,7 +12,7 @@ function NewsSlider(props) {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
+    speed: 500,
     autoplaySpeed: 5000,
     cssEase: "linear",
     responsive: [
