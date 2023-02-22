@@ -1,6 +1,7 @@
 import React from 'react';
 import video_play_icon from "../../assets/icons/video_play_icon.png";
 import banner from "../../assets/about/banner.png";
+import Swiper from '../../components/Swiper/Swiper';
 import "./about.scss";
 
 function About(props) {
@@ -47,7 +48,16 @@ function About(props) {
           </div>
         </div>
       </div>
-      <div className="supporters_section"></div>
+      <div className="supporters_section">
+        <div className="supporters_wrapper">
+          <div className="supporters_header">
+            <h1>our Supporters</h1>
+          </div>
+          <div className="supporters_info">
+            <Swiper/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

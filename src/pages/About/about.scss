@@ -162,6 +162,36 @@
       }
     }
   }
+  .supporters_section {
+    width: 100%;
+    padding: 96px calc((100% - 1500px) / 2);
+    padding-top: 0;
+    background-color: #eff7f2;
+    .supporters_wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 50px;
+      .supporters_header {
+        width: 100%;
+        h1 {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #1d2130;
+        }
+      }
+      .supporters_info {
+        width: 100%;
+      }
+    }
+  }
 }
 @media (max-width: 1550px) {
   .about_us_page .know_about_us_section {
@@ -182,6 +212,10 @@
   }
   .about_us_page .missions_section {
     padding: 96px 25px;
+  }
+  .about_us_page .supporters_section {
+    padding: 96px 25px;
+    padding-top: 0;
   }
 }
 @media (max-width: 1280px) {
@@ -271,6 +305,10 @@
   }
   .about_us_page .missions_section {
     padding: 85px 20px;
+  }
+  .about_us_page .supporters_section {
+    padding: 85px 20px;
+    padding-top: 0;
   }
 }
 @media (max-width: 950px) {
@@ -379,6 +417,10 @@
   .about_us_page .missions_section {
     padding: 70px 15px;
   }
+  .about_us_page .supporters_section {
+    padding: 70px 15px;
+    padding-top: 0;
+  }
 }
 @media (max-width: 700px) {
   .about_us_page .banner_section .banner_wrapper {
@@ -443,6 +485,10 @@
   }
   .about_us_page .missions_section {
     padding: 50px 10px;
+  }
+  .about_us_page .supporters_section {
+    padding: 50px 10px;
+    padding-top: 0;
   }
 }
 @media (max-width: 450px) {
