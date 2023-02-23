@@ -6,6 +6,7 @@ import tree_planting from "../../assets/icons/tree_planting.png";
 import water from "../../assets/icons/water.png";
 import animal_safety from "../../assets/icons/animal_safety.png";
 import biodiversity from "../../assets/icons/biodiversity.png";
+import {Projects} from "../../components/index"
 import "./activity.scss";
 
 function Activity(props) {
@@ -76,6 +77,9 @@ function Activity(props) {
             </div>
           </div>
         </div>
+      </div>
+      <div className="projects_section">
+        <Projects/>
       </div>
     </div>
   );
