@@ -273,6 +273,101 @@
       }
     }
   }
+  .journey_section {
+    width: 100%;
+    padding: 96px calc((100% - 1500px) / 2);
+    padding-top: 0;
+    .journey_wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 48px;
+      background: #0b0706;
+      border-radius: 12px;
+      padding: 64px 96px;
+      padding-right: 0;
+      .journey_info {
+        width: calc(100% - 650px - 48px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+        h2 {
+          margin-bottom: 0;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #ffffff;
+          width: 100%;
+        }
+        h1 {
+          width: 100%;
+          margin-bottom: 0;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 120%;
+          color: #ffffff;
+        }
+        p {
+          margin-bottom: 0;
+          width: 100%;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: #ffffff;
+          opacity: 0.6;
+        }
+        .statistics {
+          margin-top: 16px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 32px;
+          > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 0px;
+            h3 {
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 160%;
+              color: #ffffff;
+            }
+            h4 {
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 160%;
+              color: #ffffff;
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+      .journey_img {
+        width: 650px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 1550px) {
   .about_us_page .know_about_us_section {
@@ -301,6 +396,10 @@
   .about_us_page .awards_section {
     padding: 96px 100px;
   }
+  .about_us_page .journey_section {
+    padding: 96px 25px;
+    padding-top: 0;
+  }
 }
 @media (max-width: 1280px) {
   .about_us_page
@@ -315,6 +414,9 @@
     .know_about_us_info
     div {
     width: calc(100% - 32px - 624px);
+  }
+  .about_us_page .journey_section .journey_wrapper {
+    padding-left: 30px;
   }
 }
 @media (max-width: 1200px) {
@@ -344,6 +446,15 @@
     .know_about_us_wrapper
     .know_about_us_info {
     padding-left: 74px;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info {
+    width: 430px;
+  }
+  .about_us_page .journey_section .journey_wrapper {
+    gap: 25px;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_img {
+    width: calc(100% - 430px - 25px);
   }
 }
 @media (max-width: 1024px) {
@@ -396,6 +507,14 @@
   }
   .about_us_page .awards_section {
     padding: 85px 50px;
+  }
+  .about_us_page .journey_section {
+    padding: 85px 20px;
+    padding-top: 0;
+  }
+  .about_us_page .journey_section .journey_wrapper {
+    padding: 30px;
+    padding-right: 0;
   }
 }
 @media (max-width: 950px) {
@@ -470,6 +589,21 @@
     width: 50px;
     height: 50px;
   }
+  .about_us_page .journey_section .journey_wrapper .journey_info h1 {
+    font-size: 40px;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info {
+    width: 353px;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_img {
+    width: calc(100% - 353px - 25px);
+  }
+}
+@media (max-width: 768px) {
+  .about_us_page .journey_section .journey_wrapper {
+    padding: 10px;
+    padding-right: 0;
+  }
 }
 @media (max-width: 750px) {
   .about_us_page .know_about_us_section {
@@ -514,6 +648,27 @@
   .about_us_page .awards_section .awards_wrapper h1 {
     font-size: 35px;
     line-height: 110%;
+  }
+  .about_us_page .journey_section {
+    padding: 70px 15px;
+  }
+  .about_us_page .journey_section .journey_wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 25px;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info {
+    width: 100%;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_img {
+    width: 100%;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_img img {
+    border-radius: 12px;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info h1 {
+    font-size: 35px;
   }
 }
 @media (max-width: 700px) {
@@ -594,6 +749,9 @@
   .about_us_page .awards_section .awards_wrapper {
     gap: 25px;
   }
+  .about_us_page .journey_section {
+    padding: 50px 10px;
+  }
 }
 @media (max-width: 450px) {
   .about_us_page
@@ -617,6 +775,41 @@
   .about_us_page .awards_section .awards_wrapper .awards_info {
     gap: 15px;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info h2 {
+    text-align: center;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info h1 {
+    text-align: center;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info p {
+    text-align: center;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info .statistics {
+    justify-content: center;
+  }
+  .about_us_page
+    .journey_section
+    .journey_wrapper
+    .journey_info
+    .statistics
+    > div
+    h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .about_us_page
+    .journey_section
+    .journey_wrapper
+    .journey_info
+    .statistics
+    > div
+    h4 {
+    width: 100%;
+    text-align: center;
+  }
+  .about_us_page .journey_section .journey_wrapper {
+    padding: 10px;
   }
 }
 @media (max-width: 400px) {
@@ -647,9 +840,24 @@
   .about_us_page .awards_section .awards_wrapper h1 {
     font-size: 30px;
   }
+  .about_us_page .journey_section .journey_wrapper .journey_info h1 {
+    font-size: 30px;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info {
+    gap: 7px;
+  }
+  .about_us_page .journey_section .journey_wrapper {
+    gap: 15px;
+  }
 }
 @media (max-width: 350px) {
   .about_us_page .banner_section .banner_wrapper {
     height: 110px;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info p {
+    font-size: 14px;
+  }
+  .about_us_page .journey_section .journey_wrapper .journey_info .statistics {
+    gap: 16px;
   }
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 import video_play_icon from "../../assets/icons/video_play_icon.png";
+import journey from "../../assets/about/journey.png";
 import banner from "../../assets/about/banner.png";
 import Swiper from '../../components/Swiper/Swiper';
-import "./about.scss";
 import { useSelector } from 'react-redux';
+import "./about.scss";
 
 function About(props) {
   const {awards} = useSelector(state => state.articlesSlice);
@@ -76,6 +77,32 @@ function About(props) {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+      <div className="journey_section">
+        <div className="journey_wrapper">
+          <div className="journey_info">
+            <h2>OUR JOURNEY </h2>
+            <h1>How we raised 34M</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh.</p>
+            <div className="statistics">
+              <div>
+                <h3>34M+</h3>
+                <h4>Donation Received</h4>
+              </div>
+              <div>
+                <h3>400+</h3>
+                <h4>Volunters</h4>
+              </div>
+              <div>
+                <h3>40K+</h3>
+                <h4>Trees planted</h4>
+              </div>
+            </div>
+          </div>
+          <div className="journey_img">
+            <img src={journey} alt="" />
           </div>
         </div>
       </div>
