@@ -7,8 +7,10 @@ import journey from "../../assets/about/journey.png";
 import banner from "../../assets/about/banner.png";
 import Swiper from '../../components/Swiper/Swiper';
 import { useSelector } from 'react-redux';
+import JoinTeam from '../../components/JoinTeam/JoinTeam';
+import NewsSlider from '../../components/NewsSlider/NewsSlider';
+import Events from "../../components/Events/Events";
 import "./about.scss";
-import { Link } from 'react-router-dom';
 
 function About(props) {
   const {awards} = useSelector(state => state.articlesSlice);
@@ -141,6 +143,27 @@ function About(props) {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+      <div className="join_team_section">
+        <div className="join_team_wrapper">
+          <JoinTeam/>
+        </div>
+      </div>
+      <div className="news_section">
+        <div className="news_wrapper">
+          <div className="news_header">
+            <h1>Read Our News</h1>
+            <div className="empty_line"></div>
+          </div>
+          <div className="news_body">
+            <NewsSlider/>
+          </div>
+        </div>
+      </div>
+      <div className="events_section">
+        <div className="events_wrapper">
+          <Events/>
         </div>
       </div>
     </div>
