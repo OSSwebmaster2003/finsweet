@@ -1,13 +1,18 @@
 import React from 'react';
 import video_play_icon from "../../assets/icons/video_play_icon.png";
+import facebook_icon from "../../assets/icons/facebook_icon.png";
+import twitter_icon from "../../assets/icons/twitter_icon.png";
+import linkedin_icon from "../../assets/icons/linkedin_icon.png";
 import journey from "../../assets/about/journey.png";
 import banner from "../../assets/about/banner.png";
 import Swiper from '../../components/Swiper/Swiper';
 import { useSelector } from 'react-redux';
 import "./about.scss";
+import { Link } from 'react-router-dom';
 
 function About(props) {
   const {awards} = useSelector(state => state.articlesSlice);
+  const {team} = useSelector(state => state.articlesSlice);
   return (
     <div className='about_us_page'>
       <div className="know_about_us_section">
@@ -103,6 +108,38 @@ function About(props) {
           </div>
           <div className="journey_img">
             <img src={journey} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="team_section">
+        <div className="team_wrapper">
+          <div className="team_header">
+            <h1>Meet our team</h1>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</h5>
+          </div>
+          <div className="team_members">
+            {team.map(({id,name,job,img,facebook,linkedin,twitter}) => (
+              <div className="team_card" key={id}>
+                <div className="card_img">
+                  <img src={img} alt="" />
+                </div>
+                <div className="card_body">
+                  <h1>{name}</h1>
+                  <h2>{job}</h2>
+                  <div className="social_media">
+                    <a href={facebook} target="blank">
+                      <img src={facebook_icon} alt="" />
+                    </a>
+                    <a href={twitter} target="blank">
+                      <img src={twitter_icon} alt="" />
+                    </a>
+                    <a href={linkedin} target="blank">
+                      <img src={linkedin_icon} alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

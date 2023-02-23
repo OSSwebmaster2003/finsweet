@@ -16,6 +16,14 @@ import award1 from "../assets/awards/award1.png";
 import award2 from "../assets/awards/award2.png";
 import award3 from "../assets/awards/award3.png";
 import award4 from "../assets/awards/award4.png";
+import team1 from "../assets/team/team1.png";
+import team2 from "../assets/team/team2.png";
+import team3 from "../assets/team/team3.png";
+import team4 from "../assets/team/team4.png";
+import team5 from "../assets/team/team5.png";
+import team6 from "../assets/team/team6.png";
+import team7 from "../assets/team/team7.png";
+import team8 from "../assets/team/team8.png";
 
 const initialState = {
   supporters: [
@@ -97,7 +105,7 @@ const initialState = {
       id: 4,
       title: "Our goal is to make water available for everyone",
       descr:
-        "Guatemala is the most populous country in Central America, and its people are proud of their shared Mayan heritage. The country is diverse, with over 24 languages spoken. Unfortunately, food insecurity and malnutrition are widespread in Guatemala, and 59% of the population live below the national poverty line. Water For People started working in Guatemala in 1997. In 2007 we began to focus our efforts only in the department (or state) of El Quiché, which was selected due to its high level of poverty and high need for water and sanitation services.",
+        "Guateamla is the most populous country in Central America, and its people are proud of their shared Mayan heritage. The country is diverse, with over 24 languages spoken. Unfortunately, food insecurity and malnutrition are widespread in Guateamla, and 59% of the population live below the national poverty line. Water For People started working in Guateamla in 1997. In 2007 we began to focus our efforts only in the department (or state) of El Quiché, which was selected due to its high level of poverty and high need for water and sanitation services.",
       bg_img: news4,
     },
     {
@@ -154,6 +162,80 @@ const initialState = {
       title: "Earth Saver Award",
       location: "Vienna, Austria",
       img: award4,
+    },
+  ],
+  team: [
+    {
+      id: 1,
+      name: "Leonard John Davies",
+      job: "Cofounder, CEO",
+      img: team1,
+      facebook: "https://www.facebook.com/yahyo.rashid",
+      linkedin: "https://www.linkedin.com/feed/",
+      twitter: "https://twitter.com/otabek_sodikov",
+    },
+    {
+      id: 2,
+      name: "Francis Weber",
+      job: "Vice Chairman",
+      img: team2,
+      facebook: "https://www.facebook.com/yahyo.rashid",
+      linkedin: "https://www.linkedin.com/feed/",
+      twitter: "https://twitter.com/otabek_sodikov",
+    },
+    {
+      id: 3,
+      name: "Kyla Obrien",
+      job: "Head of Authority",
+      img: team3,
+      facebook: "https://www.facebook.com/yahyo.rashid",
+      linkedin: "https://www.linkedin.com/feed/",
+      twitter: "https://twitter.com/otabek_sodikov",
+    },
+    {
+      id: 4,
+      name: "Adrian Dixon",
+      job: "Support Executive",
+      img: team4,
+      facebook: "https://www.facebook.com/yahyo.rashid",
+      linkedin: "https://www.linkedin.com/feed/",
+      twitter: "https://twitter.com/otabek_sodikov",
+    },
+    {
+      id: 5,
+      name: "Freddy Busby",
+      job: "Project Manager",
+      img: team5,
+      facebook: "https://www.facebook.com/yahyo.rashid",
+      linkedin: "https://www.linkedin.com/feed/",
+      twitter: "https://twitter.com/otabek_sodikov",
+    },
+    {
+      id: 6,
+      name: "Dale Banks",
+      job: "Accountatnt, Finance",
+      img: team6,
+      facebook: "https://www.facebook.com/yahyo.rashid",
+      linkedin: "https://www.linkedin.com/feed/",
+      twitter: "https://twitter.com/otabek_sodikov",
+    },
+    {
+      id: 7,
+      name: "Miriam Middleton",
+      job: "Cofounder, CEO",
+      img: team7,
+      facebook: "https://www.facebook.com/yahyo.rashid",
+      linkedin: "https://www.linkedin.com/feed/",
+      twitter: "https://twitter.com/otabek_sodikov",
+    },
+    {
+      id: 8,
+      name: "Ellen Walton",
+      job: "Vice Chairman",
+      img: team8,
+      facebook: "https://www.facebook.com/yahyo.rashid",
+      linkedin: "https://www.linkedin.com/feed/",
+      twitter: "https://twitter.com/otabek_sodikov",
     },
   ],
 };
