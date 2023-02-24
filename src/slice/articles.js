@@ -24,6 +24,12 @@ import team5 from "../assets/team/team5.png";
 import team6 from "../assets/team/team6.png";
 import team7 from "../assets/team/team7.png";
 import team8 from "../assets/team/team8.png";
+import top_news1 from "../assets/media/top_news1.png";
+import top_news2 from "../assets/media/top_news2.png";
+import top_news3 from "../assets/media/top_news3.png";
+import top_news4 from "../assets/media/top_news4.png";
+import top_news5 from "../assets/media/top_news5.png";
+import top_news6 from "../assets/media/top_news6.png";
 
 const initialState = {
   supporters: [
@@ -236,6 +242,50 @@ const initialState = {
       facebook: "https://www.facebook.com/yahyo.rashid",
       linkedin: "https://www.linkedin.com/feed/",
       twitter: "https://twitter.com/otabek_sodikov",
+    },
+  ],
+  top_news: [
+    {
+      id: 1,
+      title: "Don’t destroy greenery and don’t spoil scenery.",
+      descr:
+        "Don’t Destroy Greenery and Don’t Spoil Scenery. Save Mother Earth. Here is the amazing Earth Day notebook it's a great Earth Day present for your girl, son, mom or father. Use it as a record for your adventures, as your personal Earth Day diary or as an Earth Day present for friends and family. Keep track of your adventures, experiences and memories with this Earth Day record and make them last forever.",
+      img: top_news1,
+    },
+    {
+      id: 2,
+      title: "Why saving wildlife is extremely important",
+      descr:
+        "Over the past five decades, our field work has helped bring several iconic animals back from the brink of extinction – including white and greater one-horned rhinos, certain populations of African elephants, mountain gorillas, giant pandas and tigers.",
+      img: top_news2,
+    },
+    {
+      id: 3,
+      title: "Caring for the present is caring for the future",
+      descr:
+        "This paper identifies a new source that explains environmental behaviour: the presence of future tense marking in language. We predict that languages that grammatically mark the future affect speakers' intertemporal preferences and thereby reduce their willingness to address environmental problems. We first show that speakers of languages with future tense marking are less likely to adopt environmentally responsible behaviours and to support policies to prevent environmental damage. We then document that this effect holds across countries: future tense marking is an important determinant of climate change policies and global environmental cooperation. The results suggest that there may be deep and surprising obstacles for attempts to address climate change.",
+      img: top_news3,
+    },
+    {
+      id: 4,
+      title: " Is climate change happening faster than expected?",
+      descr:
+        "NEW YORK (January 11, 2023) – As the world contends with a dual biodiversity and climate crises, a new assessment of land-based biodiversity in North America has identified areas considered to be climate refugia—areas likely to provide viable habitat for their current species—under several warming scenarios. The study's findings show that areas most critical for sustaining species lack current protections or conservation management. ",
+      img: top_news4,
+    },
+    {
+      id: 5,
+      title: "Our goal is to make water available for everyone",
+      descr:
+        "Access to safe water, sanitation and hygiene is the most basic human need for health and well-being. Billions of people will lack access to these basic services in 2030 unless progress quadruples. Demand for water is rising owing to rapid population growth, urbanization and increasing water needs from agriculture, industry, and energy sectors.",
+      img: top_news5,
+    },
+    {
+      id: 6,
+      title: "Ensure access to water and sanitation for all",
+      descr:
+        "The UN explains: 'Clean water is a basic human need, and one that should be easily accessible to all. There is sufficient fresh water on the planet to achieve this. However, due to poor infrastructure, investment and planning, every year millions of people — most of them children — die from diseases associated with inadequate water supply, sanitation and hygiene.'",
+      img: top_news6,
     },
   ],
 };
