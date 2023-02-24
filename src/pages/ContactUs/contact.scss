@@ -247,6 +247,14 @@
       }
     }
   }
+  .map_section {
+    width: 100%;
+    height: 448px;
+    > div {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
 }
 
 // res media queries
@@ -291,6 +299,9 @@
   .contact_page .contact_us_section .contact_wrapper .contact_main {
     width: calc(100% - 286px - 96px);
   }
+  .contact_page .map_section {
+    height: 380px;
+  }
 }
 @media (max-width: 1000px) {
   .contact_page
@@ -324,6 +335,9 @@
     .contact_main_body
     h1 {
     font-size: 48px;
+  }
+  .contact_page .map_section {
+    height: 300px;
   }
 }
 @media (max-width: 800px) {
@@ -400,6 +414,9 @@
   .contact_page .form_section .form_wrapper form > div .inner_div {
     width: 100%;
   }
+  .contact_page .map_section {
+    height: 240px;
+  }
 }
 @media (max-width: 450px) {
   .contact_page
@@ -428,5 +445,15 @@
   }
   .contact_page .form_section .form_wrapper form button {
     width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .contact_page .map_section {
+    height: 200px;
+  }
+}
+@media (max-width: 300px) {
+  .contact_page .map_section {
+    height: 150px;
   }
 }

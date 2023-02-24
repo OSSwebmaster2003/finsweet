@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import facebook_icon from "../../assets/icons/facebook_icon.png";
 import twitter_icon from "../../assets/icons/twitter_icon.png";
 import linkedin_icon from "../../assets/icons/linkedin_icon.png";
 import "./contact.scss";
+import YandexMap from '../../components/Map/YandexMap';
 
 function Contact(props) {
   return (
@@ -77,6 +77,9 @@ function Contact(props) {
             <button type='submit'>Send message</button>
           </form>
         </div>
+      </div>
+      <div className="map_section">
+        <YandexMap/>
       </div>
     </div>
   );
