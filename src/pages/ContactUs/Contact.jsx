@@ -47,6 +47,37 @@ function Contact(props) {
           </div>
         </div>
       </div>
+      <div className="form_section">
+        <div className="form_wrapper">
+          <form action="">
+            <div>
+              <div className="inner_div">
+                <label htmlFor="name">First Name</label>
+                <input type="text" id='name' placeholder='John' />
+              </div>
+              <div className="inner_div">
+                <label htmlFor="surname">Last Name</label>
+                <input type="text" id='surname' placeholder='Doe' />
+              </div>
+            </div>
+            <div>
+              <div className="inner_div">
+                <label htmlFor="email">Email Id</label>
+                <input type="email" id='email' placeholder='johndoe@gmail.com' />
+              </div>
+              <div className="inner_div">
+                <label htmlFor="subject">Subject</label>
+                <input type="text" id='subject' placeholder='' />
+              </div>
+            </div>
+            <div className="comments">
+              <label htmlFor="message">Message</label>
+              <textarea name="message" id="message" placeholder='Type your Messege'></textarea>
+            </div>
+            <button type='submit'>Send message</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
