@@ -112,6 +112,8 @@
         align-items: flex-start;
         justify-content: space-between;
         gap: 96px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 96px;
         .contributing_info {
           width: calc(100% - 590px - 96px);
           display: flex;
@@ -447,6 +449,9 @@
   .donation_page .donation_wrapper .contributing_section {
     padding: 45px 15px;
   }
+  .donation_page .donation_wrapper .contributing_section .contributing_wrapper {
+    padding-bottom: 45px;
+  }
   .donation_page
     .donation_wrapper
     .contributing_section
@@ -524,6 +529,9 @@
   }
   .donation_page .donation_wrapper .contributing_section {
     padding: 35px 10px;
+  }
+  .donation_page .donation_wrapper .contributing_section .contributing_wrapper {
+    padding-bottom: 35px;
   }
 }
 @media (max-width: 500px) {
