@@ -26,8 +26,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/donation" element={<Donation />} />
         <Route path="/project-read-more/:id" element={<FullProject />} />
-        <Route path="/blogs-read-more" element={<FullBlog />} />
-        <Route path="/events-read-more" element={<FullEvent />} />
+        <Route path="/blogs-read-more/:id" element={<FullBlog />} />
+        <Route path="/events-read-more/:id" element={<FullEvent />} />
       </Routes>
       <Footer />
     </div>
