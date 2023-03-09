@@ -1,6 +1,7 @@
 import { Tabs } from "antd";
 import React from "react";
 import { useSelector } from "react-redux";
+import JoinTeam from "../../components/JoinTeam/JoinTeam";
 import donation_banner from "../../assets/donation/donation_banner.png";
 import "./donation.scss";
 
@@ -64,6 +65,11 @@ function Donation(props) {
                 et justo cursus id rutrum lorem imperdiet.
               </div>
             </div>
+          </div>
+        </div>
+        <div className="join_team_section">
+          <div className="join_team_wrapper">
+            <JoinTeam />
           </div>
         </div>
       </div>
