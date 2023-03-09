@@ -1,9 +1,5 @@
 .donation_page {
-  padding-top: calc(67px + 96px);
-  padding-bottom: 96px;
-  padding-left: calc((100% - 1500px) / 2);
-  padding-right: calc((100% - 1500px) / 2);
-  background: #eff7f2;
+  width: 100%;
   .donation_wrapper {
     width: 100%;
     display: flex;
@@ -12,6 +8,11 @@
     justify-content: flex-start;
     gap: 0px;
     .donating_section {
+      padding-top: calc(67px + 96px);
+      padding-bottom: 96px;
+      padding-left: calc((100% - 1500px) / 2);
+      padding-right: calc((100% - 1500px) / 2);
+      background: #eff7f2;
       width: 100%;
       display: flex;
       align-items: center;
@@ -101,11 +102,16 @@
         }
       }
     }
+    .contributing_section {
+      width: 100%;
+      padding: 96px calc((100% - 1500px) / 2);
+      background: #ffffff;
+    }
   }
 }
 
 @media (max-width: 1550px) {
-  .donation_page {
+  .donation_page .donation_wrapper .donating_section {
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -258,7 +264,7 @@
   }
 }
 @media (max-width: 750px) {
-  .donation_page {
+  .donation_page .donation_wrapper .donating_section {
     padding: 45px 15px;
     padding-top: 105px;
   }
@@ -298,7 +304,7 @@
   }
 }
 @media (max-width: 600px) {
-  .donation_page {
+  .donation_page .donation_wrapper .donating_section {
     padding: 35px 10px;
     padding-top: 86px;
   }

@@ -288,6 +288,23 @@ const initialState = {
       img: top_news6,
     },
   ],
+  donation_tab: [
+    {
+      key: "1",
+      label: `Overview`,
+      children: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.Content of Tab Pane 1`,
+    },
+    {
+      key: "2",
+      label: `Impact`,
+      children: `The impact of donation to nature and the benefits that come from that donation. And some info about some advantages`,
+    },
+    {
+      key: "3",
+      label: `What You get`,
+      children: `The information about what we guarantee you for donating. Firstly pure nature, yeah thats the most important thing, we buy new plant and plant them.`,
+    },
+  ],
 };
 
 export const articlesSlice = createSlice({
