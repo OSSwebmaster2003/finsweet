@@ -66,6 +66,8 @@ const initialState = {
       bg_img: project1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab inventore cupiditate repellendus tenetur deserunt eum, voluptate beatae praesentium suscipit cum molestias fugiat qui saepe minima facilis! Minima nemo laboriosam ullam, ipsa fugiat aspernatur obcaecati natus sit illum incidunt assumenda corrupti veritatis tempore consectetur numquam blanditiis accusantium quos eius et!",
+      description2:
+        "Posuere sed pulvinar enim faucibus justo, cursus. In diam facilisi at sit convallis blandit blandit in. Maecenas odio orci lectus urna ante consequat erat non morbi. Rhoncus ullamcorper dictum sit non semper sit tellus adipiscing. Est sapien rhoncus sit vestibulum sollicitudin. Tellus urna malesuada eu id tempus lorem. Est aliquam sem bibendum felis interdum pharetra. Diam fermentum in lectus morbi at eget sit et quisque. Semper commodo viverra donec magna egestas nibh. Condimentum pellentesque auctor ornare at at tellus nunc cras eu. Velit dignissim penatibus faucibus tempus. Arcu pharetra morbi bibendum et dolor volutpat amet. Sed mauris amet mi sed purus vitae odio. Mi eu lectus suscipit sagittis, ultrices ut dui.",
     },
     {
       id: 2,
@@ -74,6 +76,8 @@ const initialState = {
       bg_img: project2,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab inventore cupiditate repellendus tenetur deserunt eum, voluptate beatae praesentium suscipit cum molestias fugiat qui saepe minima facilis! Minima nemo laboriosam ullam, ipsa fugiat aspernatur obcaecati natus sit illum incidunt assumenda corrupti veritatis tempore consectetur numquam blanditiis accusantium quos eius et!",
+      description2:
+        "Hello there sed pulvinar enim faucibus justo, cursus. In diam facilisi at sit convallis blandit blandit in. Maecenas odio orci lectus urna ante consequat erat non morbi. Rhoncus ullamcorper dictum sit non semper sit tellus adipiscing. Est sapien rhoncus sit vestibulum sollicitudin. Tellus urna malesuada eu id tempus lorem. Est aliquam sem bibendum felis interdum pharetra. Diam fermentum in lectus morbi at eget sit et quisque. Semper commodo viverra donec magna egestas nibh. Condimentum pellentesque auctor ornare at at tellus nunc cras eu. Velit dignissim penatibus faucibus tempus. Arcu pharetra morbi bibendum et dolor volutpat amet. Sed mauris amet mi sed purus vitae odio. Mi eu lectus suscipit sagittis, ultrices ut dui.",
     },
     {
       id: 3,
@@ -83,6 +87,8 @@ const initialState = {
       bg_img: project3,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab inventore cupiditate repellendus tenetur deserunt eum, voluptate beatae praesentium suscipit cum molestias fugiat qui saepe minima facilis! Minima nemo laboriosam ullam, ipsa fugiat aspernatur obcaecati natus sit illum incidunt assumenda corrupti veritatis tempore consectetur numquam blanditiis accusantium quos eius et!",
+      description2:
+        "I,m here sed pulvinar enim faucibus justo, cursus. In diam facilisi at sit convallis blandit blandit in. Maecenas odio orci lectus urna ante consequat erat non morbi. Rhoncus ullamcorper dictum sit non semper sit tellus adipiscing. Est sapien rhoncus sit vestibulum sollicitudin. Tellus urna malesuada eu id tempus lorem. Est aliquam sem bibendum felis interdum pharetra. Diam fermentum in lectus morbi at eget sit et quisque. Semper commodo viverra donec magna egestas nibh. Condimentum pellentesque auctor ornare at at tellus nunc cras eu. Velit dignissim penatibus faucibus tempus. Arcu pharetra morbi bibendum et dolor volutpat amet. Sed mauris amet mi sed purus vitae odio. Mi eu lectus suscipit sagittis, ultrices ut dui.",
     },
   ],
   news: [
@@ -305,13 +311,27 @@ const initialState = {
       children: `The information about what we guarantee you for donating. Firstly pure nature, yeah thats the most important thing, we buy new plant and plant them.`,
     },
   ],
+  singleProject: [],
+  singleBlog: [],
+  singleEvent: [],
 };
 
 export const articlesSlice = createSlice({
   name: "articlesSlice",
   initialState,
-  reducers: {},
+  reducers: {
+    getSingleProject: (state, action) => {
+      state.singleProject = action.payload;
+    },
+    getSingleBlog: (state, action) => {
+      state.singleBlog = action.payload;
+    },
+    getSingleEvent: (state, action) => {
+      state.singleEvent = action.payload;
+    },
+  },
 });
 
-export const {} = articlesSlice.actions;
+export const { getSingleProject, getSingleBlog, getSingleEvent } =
+  articlesSlice.actions;
 export default articlesSlice.reducer;

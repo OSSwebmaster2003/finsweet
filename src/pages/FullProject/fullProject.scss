@@ -1,0 +1,237 @@
+.single_project_page {
+  padding-top: 67px;
+  width: 100%;
+  .single_project_wrapper {
+    width: 100%;
+    .project_section {
+      width: 100%;
+      padding: 96px calc((100% - 1320px) / 2);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 32px;
+      .project_header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 24px;
+        .empty_line {
+          width: 72px;
+          height: 2px;
+          background: #1d2130;
+        }
+        h2 {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #1d2130;
+        }
+      }
+      .project_body {
+        padding-left: 96px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 32px;
+        h1 {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 120%;
+          color: #1d2130;
+        }
+        p {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: #525560;
+        }
+        img {
+          width: 100%;
+          height: calc(100vh - 100px);
+        }
+        h3 {
+          margin-top: 16px;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 120%;
+          color: #1d2130;
+        }
+        h5 {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: #525560;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1550px) {
+  .single_project_page .single_project_wrapper .project_section {
+    padding: 96px 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_header
+    .empty_line {
+    width: 50px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_header {
+    gap: 15px;
+  }
+  .single_project_page .single_project_wrapper .project_section .project_body {
+    padding-left: 65px;
+  }
+  .single_project_page .single_project_wrapper .project_section {
+    padding: 60px 90px;
+  }
+}
+@media (max-width: 750px) {
+  .single_project_page .single_project_wrapper .project_section {
+    padding: 45px;
+  }
+  .single_project_page .single_project_wrapper .project_section {
+    gap: 25px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_header
+    .empty_line {
+    width: 25px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_header {
+    gap: 10px;
+  }
+  .single_project_page .single_project_wrapper .project_section .project_body {
+    padding-left: 35px;
+    gap: 20px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_body
+    h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_body
+    h3 {
+    margin-top: 0;
+    font-size: 45px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 600px) {
+  .single_project_page {
+    padding-top: 51px;
+  }
+  .single_project_page .single_project_wrapper .project_section {
+    padding: 35px 10px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_header
+    .empty_line {
+    width: 15px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_header {
+    gap: 7px;
+  }
+  .single_project_page .single_project_wrapper .project_section .project_body {
+    padding-left: 22px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_body
+    h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_body
+    h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_body
+    img {
+    height: auto;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_body
+    h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_body
+    p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_body
+    h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .single_project_page
+    .single_project_wrapper
+    .project_section
+    .project_body
+    h5 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .single_project_page .single_project_wrapper .project_section .project_body {
+    gap: 10px;
+  }
+}
