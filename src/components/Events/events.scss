@@ -193,4 +193,37 @@
   .events .events_body .events_card .card_wrapper .card_info h3 {
     font-size: 20px;
   }
+  .events .events_body .events_card .card_wrapper .card_date h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .events .events_body .events_card .card_wrapper .card_date p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .events .events_body .events_card .card_wrapper .full_card {
+    width: 30px;
+    height: 30px;
+  }
+  .events .events_body .events_card .card_wrapper .full_card a img {
+    zoom: 0.6;
+  }
+  .events .events_body .events_card .card_wrapper .card_info {
+    width: calc(100% - 55px - 30px - 30px);
+  }
+  .events .events_body .events_card {
+    height: auto;
+  }
+  .events .events_body .events_card .card_wrapper .card_info .card_info_header {
+    gap: 8px;
+  }
+  .events
+    .events_body
+    .events_card
+    .card_wrapper
+    .card_info
+    .card_info_header
+    .empty_line {
+    width: 30px;
+  }
 }
