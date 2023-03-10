@@ -1,5 +1,4 @@
 .play_video {
-  display: none;
   position: fixed;
   z-index: 9999;
   width: 100vw;
@@ -11,6 +10,7 @@
     position: absolute;
     right: calc(15% - 30px);
     top: calc(10%);
+    cursor: pointer;
     img {
       width: 25px;
       height: 25px;
