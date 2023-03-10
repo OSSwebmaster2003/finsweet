@@ -13,11 +13,13 @@ import {
   Home,
   Media,
 } from "./pages";
+import PlayVideo from "./components/PlayVideo/PlayVideo";
 
 function App() {
   return (
     <div className="app">
       <Header />
+      <PlayVideo />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
